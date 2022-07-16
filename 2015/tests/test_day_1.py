@@ -1,5 +1,3 @@
-import pytest
-
 from src.day_1 import final_floor, basement_position
 
 
