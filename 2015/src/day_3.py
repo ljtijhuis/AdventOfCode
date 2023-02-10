@@ -35,6 +35,7 @@ def houses_visited_with_robot(input):
         c = (c + 1) % 2
     return len(visited)
 
-input = read_file('/../input/day_3.txt')
-print(houses_visited(input))
-print(houses_visited_with_robot(input))
+if __name__ == "__main__":
+    input = read_file('/../input/day_3.txt')
+    print(houses_visited(input))
+    print(houses_visited_with_robot(input))

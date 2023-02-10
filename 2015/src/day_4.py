@@ -9,6 +9,7 @@ def find_first_hash(input, extra_zero = False):
             return i
         i += 1
 
-input = 'ckczppom'
-print(find_first_hash(input))
-print(find_first_hash(input, True))
+if __name__ == "__main__":
+    input = 'ckczppom'
+    print(find_first_hash(input))
+    print(find_first_hash(input, True))

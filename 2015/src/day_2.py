@@ -13,14 +13,16 @@ def ribbon_needed(input):
     d.sort()
     return d[0]*2 + d[1]*2 + math.prod(d)
 
-input = read_file('/../input/day_2.txt')
-lines = input.split()
 
-total_paper = 0
-total_ribbon = 0
-for line in lines:
-    total_paper += paper_needed(line)
-    total_ribbon += ribbon_needed(line)
+if __name__ == "__main__":
+    input = read_file('/../input/day_2.txt')
+    lines = input.split()
 
-print(total_paper)
-print(total_ribbon)
+    total_paper = 0
+    total_ribbon = 0
+    for line in lines:
+        total_paper += paper_needed(line)
+        total_ribbon += ribbon_needed(line)
+
+    print(total_paper)
+    print(total_ribbon)

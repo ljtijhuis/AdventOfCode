@@ -65,15 +65,15 @@ def has_repeat(s):
 def new_is_nice(s):
     return has_pair(s) and has_repeat(s)
 
+if __name__ == "__main__":
+    input = read_file('/../input/day_5.txt')
+    lines = input.split()
 
-input = read_file('/../input/day_5.txt')
-lines = input.split()
+    total_nice = 0
+    total_new_nice = 0
+    for line in lines:
+        total_nice += is_nice(line)
+        total_new_nice += new_is_nice(line)
 
-total_nice = 0
-total_new_nice = 0
-for line in lines:
-    total_nice += is_nice(line)
-    total_new_nice += new_is_nice(line)
-
-print(total_nice)
-print(total_new_nice)
+    print(total_nice)
+    print(total_new_nice)

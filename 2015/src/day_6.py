@@ -92,16 +92,16 @@ class GridController:
             self.grid.toggle(int(x1), int(y1), int(x2), int(y2))
             
 
+if __name__ == "__main__":
+    input = read_file('/../input/day_6.txt')
+    lines = input.splitlines()
+    grid = Grid()
+    brightness_grid = BrightnessGrid()
+    controller = GridController(grid)
+    brightness_controller = GridController(brightness_grid)
+    for line in lines:
+        controller.run_command(line)
+        brightness_controller.run_command(line)
 
-input = read_file('/../input/day_6.txt')
-lines = input.splitlines()
-grid = Grid()
-brightness_grid = BrightnessGrid()
-controller = GridController(grid)
-brightness_controller = GridController(brightness_grid)
-for line in lines:
-    controller.run_command(line)
-    brightness_controller.run_command(line)
-
-print(controller.total_count())
-print(brightness_controller.total_count())
+    print(controller.total_count())
+    print(brightness_controller.total_count())

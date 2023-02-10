@@ -16,7 +16,8 @@ def basement_position(input):
     
     return position
 
-input = read_file('/../input/day_1.txt')
+if __name__ == "__main__":
+    input = read_file('/../input/day_1.txt')
 
-print(final_floor(input))
-print(basement_position(input))
+    print(final_floor(input))
+    print(basement_position(input))
