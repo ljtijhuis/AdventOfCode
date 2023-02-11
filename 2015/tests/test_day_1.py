@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path('.\\2015').resolve()))
+
 import pytest
 from src.day_1 import final_floor, basement_position
 

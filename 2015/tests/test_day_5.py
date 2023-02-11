@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path('.\\2015').resolve()))
+
 import pytest
 from src.day_5 import has_n_vowels, has_twice_in_row, no_forbidden_strings, is_nice, has_pair, has_repeat, new_is_nice
 

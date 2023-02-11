@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path('.\\2015').resolve()))
+
 import pytest
 from src.day_4 import find_first_hash
 

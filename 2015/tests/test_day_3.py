@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path('.\\2015').resolve()))
+
 import pytest
 from src.day_3 import houses_visited, houses_visited_with_robot
 
